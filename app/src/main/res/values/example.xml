@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--    private fun getRandom() {-->
+<!--    buildNewRetrofit().create(ApiService::class.java).getRandom(Settings.API_KEY).subscribeOn(-->
+<!--    Schedulers.newThread()-->
+<!--    )-->
+<!--    .observeOn(AndroidSchedulers.mainThread())-->
+<!--    .map {-->
+<!--    url = it.gifObjectModel.toGifItemModel().stillUrl ?: ""-->
+<!--    fitToScreenSize(it)-->
+<!--    }.subscribeBy(-->
+<!--    onNext = {-->
+<!--    GlideApp.with(this)-->
+<!--    .load(url)-->
+<!--    .diskCacheStrategy(DiskCacheStrategy.ALL)-->
+<!--    .into(ivItemGifList)-->
+<!--    }, onError = {-->
+<!--    Log.d("testGif", "onError url = $url")-->
+<!--    }-->
+<!--    )-->
+<!--    }-->
+
+<!--    fun buildNewRetrofit(): Retrofit {-->
+
+<!--    val client = OkHttpClient.Builder()-->
+<!--    .build()-->
+
+<!--    val retrofit = Retrofit.Builder()-->
+<!--    .baseUrl(Settings.BASE_URL)-->
+<!--    .client(client)-->
+<!--    .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))-->
+<!--    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())-->
+<!--    .build()-->
+
+<!--    return retrofit-->
+
+<!--    }-->
+
+
+<!--    fun getRandom(@Query("api_key") apiKey:String): Observable<RandomResponse>-->
+<!--    -->
+
+<!--    val stillUrl: String?,-->
+<!--    val videoUrl: String?,-->
+<!--    val title: String?,-->
+<!--    val height: String = ""-->
+<!--    -->
+
+<!--    @SerializedName("url")-->
+<!--    val gifUrl: String,-->
+<!--    @SerializedName("mp4")-->
+<!--    val mp4Url: String,-->
+<!--    val width: String = "",-->
+<!--    val height: String = ""-->
+</resources>
